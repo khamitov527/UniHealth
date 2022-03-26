@@ -19,6 +19,9 @@
 		3E4E579A27EF9E38004DD80C /* RestaurantData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4E579927EF9E38004DD80C /* RestaurantData.swift */; };
 		3E4E579C27EFB216004DD80C /* FoodsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4E579B27EFB216004DD80C /* FoodsViewController.swift */; };
 		3E4E579E27EFB233004DD80C /* FoodsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4E579D27EFB233004DD80C /* FoodsCell.swift */; };
+		3E4E57A027EFB851004DD80C /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4E579F27EFB851004DD80C /* Food.swift */; };
+		3E4E57A227EFB85D004DD80C /* FoodData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4E57A127EFB85D004DD80C /* FoodData.swift */; };
+		3E4E57A427EFBA0F004DD80C /* FoodCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4E57A327EFBA0F004DD80C /* FoodCounter.swift */; };
 		3E955D34E75ADBB54A07AA9F /* Pods_USFDining.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76D211A44B0F9AEDFA89E988 /* Pods_USFDining.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +40,9 @@
 		3E4E579927EF9E38004DD80C /* RestaurantData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantData.swift; sourceTree = "<group>"; };
 		3E4E579B27EFB216004DD80C /* FoodsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodsViewController.swift; sourceTree = "<group>"; };
 		3E4E579D27EFB233004DD80C /* FoodsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodsCell.swift; sourceTree = "<group>"; };
+		3E4E579F27EFB851004DD80C /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
+		3E4E57A127EFB85D004DD80C /* FoodData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodData.swift; sourceTree = "<group>"; };
+		3E4E57A327EFBA0F004DD80C /* FoodCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCounter.swift; sourceTree = "<group>"; };
 		5293F944E04CB2D33483B83B /* Pods-USFDining.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-USFDining.debug.xcconfig"; path = "Target Support Files/Pods-USFDining/Pods-USFDining.debug.xcconfig"; sourceTree = "<group>"; };
 		76D211A44B0F9AEDFA89E988 /* Pods_USFDining.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_USFDining.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E1D66F28F598566AE6D0571 /* Pods-USFDining.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-USFDining.release.xcconfig"; path = "Target Support Files/Pods-USFDining/Pods-USFDining.release.xcconfig"; sourceTree = "<group>"; };
@@ -99,6 +105,9 @@
 			children = (
 				3E4E579327EF871D004DD80C /* Restaurant.swift */,
 				3E4E579927EF9E38004DD80C /* RestaurantData.swift */,
+				3E4E579F27EFB851004DD80C /* Food.swift */,
+				3E4E57A127EFB85D004DD80C /* FoodData.swift */,
+				3E4E57A327EFBA0F004DD80C /* FoodCounter.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -250,11 +259,14 @@
 			files = (
 				3E4E579027EF8638004DD80C /* RestaurantsViewController.swift in Sources */,
 				3E4E579227EF8661004DD80C /* RestaurantsCell.swift in Sources */,
+				3E4E57A227EFB85D004DD80C /* FoodData.swift in Sources */,
 				3E4E579E27EFB233004DD80C /* FoodsCell.swift in Sources */,
 				3E4E579A27EF9E38004DD80C /* RestaurantData.swift in Sources */,
 				3E4E577827EF7E65004DD80C /* AppDelegate.swift in Sources */,
 				3E4E579427EF871D004DD80C /* Restaurant.swift in Sources */,
 				3E4E577A27EF7E65004DD80C /* SceneDelegate.swift in Sources */,
+				3E4E57A427EFBA0F004DD80C /* FoodCounter.swift in Sources */,
+				3E4E57A027EFB851004DD80C /* Food.swift in Sources */,
 				3E4E579C27EFB216004DD80C /* FoodsViewController.swift in Sources */,
 				3E4E578C27EF84BB004DD80C /* MapViewController.swift in Sources */,
 			);

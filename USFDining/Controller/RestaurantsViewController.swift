@@ -49,6 +49,20 @@ class RestaurantsViewController: UIViewController, UITableViewDelegate, UITableV
         return cell
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        let cell = sender as! UITableViewCell
+        let indexPath = tableView.indexPath(for: cell)!
+        let restaurant = restaurantData.rests[indexPath.row].name
+        
+        //Pass the selected movie to the details view controller
+        let foodsViewController = segue.destination as! FoodsViewController
+        
+        foodsViewController.title = restaurant
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+    }
+    
     
 
 

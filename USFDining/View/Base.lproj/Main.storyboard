@@ -67,6 +67,7 @@
                                             <outlet property="nameLabel" destination="4mu-RM-gxg" id="Lg8-U7-YcN"/>
                                             <outlet property="restaurantImage" destination="3Fk-ij-l85" id="rVX-Kb-uFM"/>
                                             <outlet property="starsImage" destination="ZcO-De-rNQ" id="QSX-7B-upf"/>
+                                            <segue destination="2d6-uF-tYR" kind="show" id="mSA-Oe-d4N"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -78,7 +79,6 @@
                     <navigationItem key="navigationItem" title="Restaurants" id="jcW-yK-x3i"/>
                     <connections>
                         <outlet property="tableView" destination="enC-kJ-enD" id="OCu-Dq-7c7"/>
-                        <segue destination="2d6-uF-tYR" kind="presentation" id="MBm-0u-Wye"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -98,7 +98,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="150" id="auw-cr-vha" customClass="FoodsCell" customModule="USFDining" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FoodsCell" rowHeight="150" id="auw-cr-vha" customClass="FoodsCell" customModule="USFDining" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.5" width="414" height="150"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="auw-cr-vha" id="IbG-4e-eex">
@@ -150,6 +150,9 @@
                                                 </label>
                                                 <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="4Ef-4d-vnc">
                                                     <rect key="frame" x="300" y="98" width="94" height="32"/>
+                                                    <connections>
+                                                        <action selector="stepperButtonTapped:" destination="auw-cr-vha" eventType="valueChanged" id="Pzt-US-DVZ"/>
+                                                    </connections>
                                                 </stepper>
                                             </subviews>
                                             <constraints>
@@ -192,6 +195,10 @@
                         <viewLayoutGuide key="safeArea" id="VhK-K1-cdM"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Xjw-sI-5BM"/>
+                    <connections>
+                        <outlet property="foodTableView" destination="kVU-yG-K6b" id="NrM-ev-fMB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="79d-yg-hiR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

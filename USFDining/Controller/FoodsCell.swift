@@ -20,11 +20,23 @@ class FoodsCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
     }
+    
+    var foodCounterCell : FoodCounter! {
+        didSet {
+            foodStepper.value = foodCounterCell.foodCounter
+            foodCount.text = String(foodCounterCell.foodCounter)
+        }
+    }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    @IBAction func stepperButtonTapped(_ sender: UIStepper) {
+        foodCounterCell.foodCounter = sender.value
+        self.foodCount.text = String(sender.value)
     }
 
 }

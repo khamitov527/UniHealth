@@ -9,7 +9,7 @@ import Foundation
 
 struct RestaurantData {
     
-    var restaurantNumber = 0
+//    var restaurantNumber = 0
     
     let rests = [
         Restaurant(
@@ -34,18 +34,18 @@ struct RestaurantData {
         ),
     ]
     
-    func getRestaurantName() -> String {
-        return rests[restaurantNumber].name
-    }
-    
-    func getRestaurantURL() -> String {
-        return rests[restaurantNumber].imageURL
-    }
-    
-    func getRestaurantRating() -> Double {
-        return rests[restaurantNumber].rating
-    }
-    
+//    func getRestaurantName() -> String {
+//        return rests[restaurantNumber].name
+//    }
+//    
+//    func getRestaurantURL() -> String {
+//        return rests[restaurantNumber].imageURL
+//    }
+//    
+//    func getRestaurantRating() -> Double {
+//        return rests[restaurantNumber].rating
+//    }
+//    
 //    mutating func nextStory(userChoice: String) {
 //
 //        let currentFood = foods[foodNumber]
