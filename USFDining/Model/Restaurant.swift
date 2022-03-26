@@ -8,16 +8,11 @@
 import Foundation
 import UIKit
 
-class Restaurant {
-    var imageURL: URL?
-    var name: String
-    var rating: Double
+struct Restaurant {
     
-    init(dict: ([String: Any])){
-        
-        imageURL = URL(string: dict["image_url"] as! String)
-        name = dict["name"] as! String
-        rating = dict["rating"] as! Double
-    }
+    var name: String = ""
+    var imageURL: String = ""
+    var rating: Double = 0.0
+    
 }
 
