@@ -12,6 +12,7 @@ class RestaurantsCell: UITableViewCell {
     
     @IBOutlet var restaurantImage: UIImageView!
     @IBOutlet var nameLabel: UILabel!
+    @IBOutlet var addressLabel: UILabel!
     @IBOutlet var starsImage: UIImageView!
     
     

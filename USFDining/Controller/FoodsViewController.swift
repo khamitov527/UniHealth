@@ -62,13 +62,13 @@ class FoodsViewController: UIViewController, UITableViewDelegate, UITableViewDat
             cell.foodImage.af.setImage(withURL: imageUrl!)
             
             let fTitle = foodie.title
-            let fDesription = foodie.description
             let fCalories = foodie.calories
             
             
+            
             cell.foodTitle!.text = fTitle
-            cell.foodDescription!.text = fDesription
             cell.foodCalories!.text = String(fCalories)
+            
             //cell.foodCount!.text = String(foodCountTimes)
             
             

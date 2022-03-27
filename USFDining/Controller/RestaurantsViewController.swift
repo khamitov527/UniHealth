@@ -41,6 +41,8 @@ class RestaurantsViewController: UIViewController, UITableViewDelegate, UITableV
 
         cell.restaurantImage.af.setImage(withURL: imageUrl!)
         
+        cell.addressLabel.text = restaurant.address
+        
 //        let baseStarsUrl = restaurant.rating
 //        let ratingUrl = URL(string: baseStarsUrl)
 //
