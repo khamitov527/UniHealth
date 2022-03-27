@@ -12,9 +12,9 @@ class MapViewController: UIViewController, MKMapViewDelegate {
 
     @IBOutlet var mapView: MKMapView!
     
-    let locationLatLong = CLLocation(latitude: 28.0602485, longitude: -82.4289462)
+    let locationLatLong = CLLocation(latitude: 28.0614844, longitude: -82.414704)
     
-    let distanceSpan: CLLocationDistance = 3000
+    let distanceSpan: CLLocationDistance = 2800
     
     func zoomLevel(location: CLLocation){
         
