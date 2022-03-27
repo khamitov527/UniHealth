@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="msb-d5-Whh">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KPr-OK-Y3r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -271,7 +271,7 @@
         <!--Login View Controller-->
         <scene sceneID="SSK-2K-Zzq">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="KPr-OK-Y3r" customClass="LoginViewController" customModule="USFDining" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" modalPresentationStyle="fullScreen" id="KPr-OK-Y3r" customClass="LoginViewController" customModule="USFDining" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mUN-nZ-S0C">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -466,7 +466,14 @@
                             <constraint firstItem="6w3-BL-L0a" firstAttribute="centerX" secondItem="UlB-Fm-7TN" secondAttribute="centerX" id="hSf-f2-zmu"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Welcome" id="unV-I1-Qdn"/>
+                    <navigationItem key="navigationItem" title="Welcome" id="unV-I1-Qdn">
+                        <barButtonItem key="rightBarButtonItem" title="Log Out" image="rectangle.portrait.and.arrow.right" catalog="system" id="7y9-dv-znD">
+                            <color key="tintColor" red="0.48757952450000003" green="0.83736759419999995" blue="0.66272348169999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <connections>
+                                <action selector="onLogoutButton:" destination="lJG-K9-QqB" id="wZ7-ze-dcG"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="NameLabel" destination="DAa-JV-OLZ" id="FKx-Bd-1Od"/>
                         <outlet property="ProfileImage" destination="6w3-BL-L0a" id="kLs-wq-0gC"/>
@@ -508,6 +515,7 @@
         <image name="menucard" catalog="system" width="107" height="128"/>
         <image name="person" catalog="system" width="128" height="117"/>
         <image name="profile" width="931" height="1080"/>
+        <image name="rectangle.portrait.and.arrow.right" catalog="system" width="128" height="108"/>
         <image name="starrating" width="102" height="18"/>
         <image name="unihealthlogo" width="1350" height="1350"/>
         <systemColor name="systemBackgroundColor">
