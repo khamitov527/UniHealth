@@ -12,7 +12,8 @@ class ProfileTableViewCell: UITableViewCell {
     
     @IBOutlet var CategoryLabel: UILabel!
     @IBOutlet var ValueLabel: UILabel!
-  
+    @IBOutlet var dateLabel: UILabel!
+    
     
     
     override func awakeFromNib() {

@@ -8,16 +8,21 @@
 import UIKit
 import Parse
 
-class ProfileViewController: UIViewController {
+class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     
+    @IBOutlet var historyTableView: UITableView!
     @IBOutlet var ProfileImage: UIImageView!
     @IBOutlet var NameLabel: UILabel!
     @IBOutlet var ProfileTableView: UITableView!
     
+    var foodsEaten = [PFObject]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        historyTableView.delegate = self
+        historyTableView.dataSource = self
 
         // Do any additional setup after loading the view.
     }
@@ -36,8 +41,41 @@ class ProfileViewController: UIViewController {
     }
     
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        let query = PFQuery(className: "FoodsEaten")
+        query.includeKey("name")
+        
+        query.findObjectsInBackground { (foodsEaten, error) in
+            if foodsEaten != nil {
+                self.foodsEaten = foodsEaten!
+                self.historyTableView.reloadData()
+            }
+        }
+    }
     
-
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return foodsEaten.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = historyTableView.dequeueReusableCell(withIdentifier: "ProfileTableViewCell") as! ProfileTableViewCell
+        
+        let foodItem = foodsEaten[indexPath.row]
+        
+        let foodName = foodItem["name"] as! String
+        let foodCalories = foodItem["calories"] as! String
+//        let foodDate = foodItem["createdAt"] as! String
+        
+        cell.CategoryLabel.text = foodName
+        cell.ValueLabel.text = foodCalories
+//        cell.dateLabel.text = foodDate
+        
+        return cell;
+    }
     /*
     // MARK: - Navigation
 
