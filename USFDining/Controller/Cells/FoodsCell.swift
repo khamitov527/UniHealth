@@ -6,15 +6,17 @@
 //
 
 import UIKit
+import Parse
 
 class FoodsCell: UITableViewCell {
 
     @IBOutlet var foodImage: UIImageView!
     @IBOutlet var foodTitle: UILabel!
-    @IBOutlet var foodDescription: UILabel!
     @IBOutlet var foodCalories: UILabel!
     @IBOutlet var foodCount: UILabel!
     @IBOutlet var foodStepper: UIStepper!
+    
+    var restaurantsData = RestaurantData()
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -41,6 +43,19 @@ class FoodsCell: UITableViewCell {
     
     
     @IBAction func AddFood(_ sender: Any) {
+        let foodeaten = PFObject(className: "FoodsEaten")
+        
+        
+        foodeaten["name"] = foodTitle.text
+        foodeaten["calories"] = foodCalories.text
+        
+        foodeaten.saveInBackground { success, error in
+            if success {
+                print("Saved")
+            } else {
+                print("error")
+            }
+        }
     }
     
 }
