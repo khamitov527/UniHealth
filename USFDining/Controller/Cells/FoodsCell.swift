@@ -38,5 +38,9 @@ class FoodsCell: UITableViewCell {
         foodCounterCell.foodCounter = sender.value
         self.foodCount.text = String(sender.value)
     }
-
+    
+    
+    @IBAction func AddFood(_ sender: Any) {
+    }
+    
 }

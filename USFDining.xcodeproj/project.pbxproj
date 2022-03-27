@@ -26,6 +26,7 @@
 		3E4E57A827EFD90C004DD80C /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4E57A727EFD90C004DD80C /* ProfileTableViewCell.swift */; };
 		3E4E57AC27EFE3F7004DD80C /* RestaurantLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4E57AB27EFE3F7004DD80C /* RestaurantLocation.swift */; };
 		3E955D34E75ADBB54A07AA9F /* Pods_USFDining.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76D211A44B0F9AEDFA89E988 /* Pods_USFDining.framework */; };
+		60DAB60627F0919800D99E9D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DAB60527F0919800D99E9D /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		3E4E57A727EFD90C004DD80C /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
 		3E4E57AB27EFE3F7004DD80C /* RestaurantLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantLocation.swift; sourceTree = "<group>"; };
 		5293F944E04CB2D33483B83B /* Pods-USFDining.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-USFDining.debug.xcconfig"; path = "Target Support Files/Pods-USFDining/Pods-USFDining.debug.xcconfig"; sourceTree = "<group>"; };
+		60DAB60527F0919800D99E9D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = USFDining/View/LoginViewController.swift; sourceTree = SOURCE_ROOT; };
 		76D211A44B0F9AEDFA89E988 /* Pods_USFDining.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_USFDining.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E1D66F28F598566AE6D0571 /* Pods-USFDining.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-USFDining.release.xcconfig"; path = "Target Support Files/Pods-USFDining/Pods-USFDining.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -131,6 +133,7 @@
 		3E4E579727EF8808004DD80C /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				60DAB60527F0919800D99E9D /* LoginViewController.swift */,
 				3E4E57AA27EFDDA3004DD80C /* Cells */,
 				3E4E578B27EF84BB004DD80C /* MapViewController.swift */,
 				3E4E578F27EF8638004DD80C /* RestaurantsViewController.swift */,
@@ -286,6 +289,7 @@
 				3E4E577A27EF7E65004DD80C /* SceneDelegate.swift in Sources */,
 				3E4E57A427EFBA0F004DD80C /* FoodCounter.swift in Sources */,
 				3E4E57A027EFB851004DD80C /* Food.swift in Sources */,
+				60DAB60627F0919800D99E9D /* LoginViewController.swift in Sources */,
 				3E4E57A627EFD59A004DD80C /* ProfileViewController.swift in Sources */,
 				3E4E579C27EFB216004DD80C /* FoodsViewController.swift in Sources */,
 				3E4E578C27EF84BB004DD80C /* MapViewController.swift in Sources */,

@@ -7,5 +7,6 @@ target 'USFDining' do
 
   # Pods for USFDining
   pod 'AlamofireImage'
+  pod 'Parse'
 
 end
