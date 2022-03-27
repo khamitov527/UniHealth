@@ -1,11 +1,11 @@
 # UniHealth
 
+
 ## Video Walkthrough
 
-Here's a walkthrough of UniHealth app:
+Here's a walkthrough of our UniHealth app:
 
-<img src='https://github.com/khamitov527/UniHealth/blob/main/unihealth.gif' title='Video Walkthrough' width='350' alt='Video Walkthrough' />
-
+<img src='https://github.com/khamitov527/UniHealth/blob/main/unihealth.gif' title='Video Walkthrough' width='250' alt='Video Walkthrough' />
 
 ## Inspiration
 We wanted to create something that could have a positive influence on the USF community and solve a problem faced by the student population. We found that there are many benefits related to tracking food information but USF students cannot reap these benefits because this process is difficult to do with the food served at the dining halls. We also realized that students would benefit by being able to view the menus of the dining halls and their locations. This is especially valuable for freshmen who are unfamiliar with the USF campus.
@@ -29,4 +29,5 @@ We learned how to work with Databases and create individual users for our app. W
 We want to Partner with USF Dining and use their data on the food they serve. We want to Track more information on the food items such as Sugars, Fats, Proteins, etc. We also want to add a recommendation feature that shows users what food they should eat in order to have a balanced diet. We started out with the intention of using this app solely with USF but we believe this app could be used on campuses around the country.
 
 
+### Created by Matthew Sharp and Akylbek (Beck) Khamitov for HackaBull at USF (March 26-27, 2022)
 
