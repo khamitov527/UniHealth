@@ -16,19 +16,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="usfDiningLogo" translatesAutoresizingMaskIntoConstraints="NO" id="H4B-Tq-fpR">
-                                <rect key="frame" x="87" y="384" width="240" height="128"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="unihealthlogo" translatesAutoresizingMaskIntoConstraints="NO" id="H4B-Tq-fpR">
+                                <rect key="frame" x="57" y="298" width="300" height="300"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="ILq-OA-GcV"/>
-                                    <constraint firstAttribute="height" constant="128" id="sqQ-h4-gLa"/>
+                                    <constraint firstAttribute="width" constant="300" id="ILq-OA-GcV"/>
+                                    <constraint firstAttribute="height" constant="300" id="sqQ-h4-gLa"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="H4B-Tq-fpR" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="0Ep-4p-AZ7"/>
-                            <constraint firstItem="H4B-Tq-fpR" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="5wU-Q3-9TX"/>
+                            <constraint firstItem="H4B-Tq-fpR" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="3rA-Zb-FBe"/>
+                            <constraint firstItem="H4B-Tq-fpR" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="hSP-FX-ubz"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -38,7 +38,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="usfDiningLogo" width="255" height="77"/>
+        <image name="unihealthlogo" width="1350" height="1350"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
