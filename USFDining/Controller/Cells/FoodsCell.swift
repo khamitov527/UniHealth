@@ -13,8 +13,6 @@ class FoodsCell: UITableViewCell {
     @IBOutlet var foodImage: UIImageView!
     @IBOutlet var foodTitle: UILabel!
     @IBOutlet var foodCalories: UILabel!
-    @IBOutlet var foodCount: UILabel!
-    @IBOutlet var foodStepper: UIStepper!
     
     var restaurantsData = RestaurantData()
     
@@ -23,22 +21,11 @@ class FoodsCell: UITableViewCell {
         // Initialization code
     }
     
-    var foodCounterCell : FoodCounter! {
-        didSet {
-            foodStepper.value = foodCounterCell.foodCounter
-            foodCount.text = String(foodCounterCell.foodCounter)
-        }
-    }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
-    }
-    
-    @IBAction func stepperButtonTapped(_ sender: UIStepper) {
-        foodCounterCell.foodCounter = sender.value
-        self.foodCount.text = String(sender.value)
     }
     
     
@@ -51,11 +38,22 @@ class FoodsCell: UITableViewCell {
         
         foodeaten.saveInBackground { success, error in
             if success {
+//                let main: UIStoryboard =
+//                UIStoryboard.init(name: "Main",bundle: nil);
+//                 
+//                let firstViewController:
+//                FoodsViewController = main.instantiateViewController(withIdentifier: "FoodsViewController") as! FoodsViewController;
+//                firstViewController.showAlert()
+//                
                 print("Saved")
             } else {
                 print("error")
             }
         }
+        
+        
     }
+    
+
     
 }

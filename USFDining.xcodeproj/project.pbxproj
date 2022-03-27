@@ -21,7 +21,6 @@
 		3E4E579E27EFB233004DD80C /* FoodsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4E579D27EFB233004DD80C /* FoodsCell.swift */; };
 		3E4E57A027EFB851004DD80C /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4E579F27EFB851004DD80C /* Food.swift */; };
 		3E4E57A227EFB85D004DD80C /* FoodData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4E57A127EFB85D004DD80C /* FoodData.swift */; };
-		3E4E57A427EFBA0F004DD80C /* FoodCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4E57A327EFBA0F004DD80C /* FoodCounter.swift */; };
 		3E4E57A627EFD59A004DD80C /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4E57A527EFD59A004DD80C /* ProfileViewController.swift */; };
 		3E4E57A827EFD90C004DD80C /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4E57A727EFD90C004DD80C /* ProfileTableViewCell.swift */; };
 		3E4E57AC27EFE3F7004DD80C /* RestaurantLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4E57AB27EFE3F7004DD80C /* RestaurantLocation.swift */; };
@@ -46,7 +45,6 @@
 		3E4E579D27EFB233004DD80C /* FoodsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodsCell.swift; sourceTree = "<group>"; };
 		3E4E579F27EFB851004DD80C /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 		3E4E57A127EFB85D004DD80C /* FoodData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodData.swift; sourceTree = "<group>"; };
-		3E4E57A327EFBA0F004DD80C /* FoodCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCounter.swift; sourceTree = "<group>"; };
 		3E4E57A527EFD59A004DD80C /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		3E4E57A727EFD90C004DD80C /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
 		3E4E57AB27EFE3F7004DD80C /* RestaurantLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantLocation.swift; sourceTree = "<group>"; };
@@ -115,7 +113,6 @@
 				3E4E579927EF9E38004DD80C /* RestaurantData.swift */,
 				3E4E579F27EFB851004DD80C /* Food.swift */,
 				3E4E57A127EFB85D004DD80C /* FoodData.swift */,
-				3E4E57A327EFBA0F004DD80C /* FoodCounter.swift */,
 				3E4E57AB27EFE3F7004DD80C /* RestaurantLocation.swift */,
 			);
 			path = Model;
@@ -133,9 +130,9 @@
 		3E4E579727EF8808004DD80C /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				60DAB60527F0919800D99E9D /* LoginViewController.swift */,
 				3E4E57AA27EFDDA3004DD80C /* Cells */,
 				3E4E578B27EF84BB004DD80C /* MapViewController.swift */,
+				60DAB60527F0919800D99E9D /* LoginViewController.swift */,
 				3E4E578F27EF8638004DD80C /* RestaurantsViewController.swift */,
 				3E4E579B27EFB216004DD80C /* FoodsViewController.swift */,
 				3E4E57A527EFD59A004DD80C /* ProfileViewController.swift */,
@@ -287,7 +284,6 @@
 				3E4E579427EF871D004DD80C /* Restaurant.swift in Sources */,
 				3E4E57AC27EFE3F7004DD80C /* RestaurantLocation.swift in Sources */,
 				3E4E577A27EF7E65004DD80C /* SceneDelegate.swift in Sources */,
-				3E4E57A427EFBA0F004DD80C /* FoodCounter.swift in Sources */,
 				3E4E57A027EFB851004DD80C /* Food.swift in Sources */,
 				60DAB60627F0919800D99E9D /* LoginViewController.swift in Sources */,
 				3E4E57A627EFD59A004DD80C /* ProfileViewController.swift in Sources */,

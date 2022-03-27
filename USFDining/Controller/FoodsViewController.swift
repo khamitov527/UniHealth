@@ -13,8 +13,6 @@ class FoodsViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     var foodData = FoodData()
     
-    var counts = [FoodCounter]()
-    
     var restaurantNumber = 0
     
     
@@ -24,8 +22,6 @@ class FoodsViewController: UIViewController, UITableViewDelegate, UITableViewDat
         foodTableView.dataSource = self
         foodTableView.delegate = self
         // Do any additional setup after loading the view.
- 
-        counts = [FoodCounter(foodCounter: 0.0), FoodCounter(foodCounter: 0.0), FoodCounter(foodCounter: 0.0), FoodCounter(foodCounter: 0.0), FoodCounter(foodCounter: 0.0), FoodCounter(foodCounter: 0.0), FoodCounter(foodCounter: 0.0), FoodCounter(foodCounter: 0.0), FoodCounter(foodCounter: 0.0), FoodCounter(foodCounter: 0.0), FoodCounter(foodCounter: 0.0), FoodCounter(foodCounter: 0.0)]
         
         foodTableView.reloadData()
     }
@@ -71,17 +67,17 @@ class FoodsViewController: UIViewController, UITableViewDelegate, UITableViewDat
             
             //cell.foodCount!.text = String(foodCountTimes)
             
-            
-            cell.foodCounterCell = counts[indexPath.row]
         }
             return cell
         
     }
-
-    func stepperButton(sender: FoodsCell) {
-        if let indexPath = foodTableView.indexPath(for: sender){
-            print(indexPath)
-        }
-    }
+    
+//    func showAlert(){
+//        let ac = UIAlertController(title: "Meal Added", message: nil, preferredStyle: .alert)
+//
+//        ac.addAction(UIAlertAction(title: "Okay", style: .default))
+//
+//        present(ac, animated: true)
+//    }
 
 }
